@@ -18,6 +18,5 @@ do
                 mkdir -p $dir
         fi
 
-        cp $f $dir
+        mv $f $dir
 done
-
