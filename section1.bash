@@ -1,6 +1,7 @@
 #!/bin/bash
 
 FILES="./"
+target=".............."
 
 for f in "$FILES"*.log
 do
@@ -16,7 +17,7 @@ do
 
         if [[ ! -e $dir ]]
         then
-                mkdir -p $dir
+                mkdir -p $target/$dir
         fi
 
         mv $f $dir
